@@ -296,7 +296,8 @@ if __name__ == '__main__':
     # print(f"vector_size: {emb.vector_size}")
     # emb = GensimEmbedding('res/embedding/word2vec/word2vec.model')
     # print(f"vector_size: {emb.vector_size}")
-    emb = SwivelEmbedding('res/embedding/vecs')
-    print(f"vector_size: {emb.vector_size}")
-    vec = get_oov(emb, '上海软件开发工程师')
-    print(emb.neighbors(vec))
+    # emb = SwivelEmbedding('res/embedding/vecs')
+    # print(f"vector_size: {emb.vector_size}")
+    # vec = get_oov_with_tokenize(emb, '上海软件开发工程师')
+    # print(emb.neighbors(vec))
+    pass

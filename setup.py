@@ -2,7 +2,7 @@ import setuptools
 import keyword_extraction as package
 
 
-with open("keyword_extraction/README.md", "r") as fh:
+with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(

@@ -1,29 +1,3 @@
-# keyword_extraction
-
-## Feature
-
-### 模型
-- TextRanker(with w2v)
-- PositionRanker(with w2v)
-- EnsembleRanker(推荐，自研, 以上模型都是该模型的特例)
-    - 支持gensim和swivel的词向量，也支持自定义词向量
-    - 支持jieba分词tokenizer，也支持自定义分词器
-    - 支持自定义词表, 提高相关词语的权值
-    - 支持对带title的文本进行关键词抽取
-    - 支持jaccard相似度和w2vcos相似度混合
-    - 支持关键词新词发现
-    - 支持关键词去重
-    - 支持多维度特征融合
-
-## Install
-
-```
-pip install keyword-extraction
-```
-
-## Usage
-
-```
 # -*- coding: utf-8 -*-
 
 from keyword_extraction.tokenizer import JiebaTokenizer
@@ -56,17 +30,3 @@ if __name__ == '__main__':
                                     pos_filter=('n', 'vn', 'v', 'l', 'eng'),
                                     with_weights=True)
     print(keywords)
- ```
-
-结果如下:
-
-```
-[['项目投资分析', 0.012887602399103474], ['估值模型', 0.012176652545880764], ['股权投资基金', 0.011910187610926229], ['投资项目', 0.011766760469749765], ['财务报表分析', 0.011750161967943665], ['需求分析', 0.011674730369881698], ['数据模型', 0.011367384490566831], ['数据>
-分析', 0.011313966421106653], ['香港股市', 0.01125084883916266], ['项目经理', 0.011141080159173743]]
-```
-
-## API
-
-## Example
-
-## Other
