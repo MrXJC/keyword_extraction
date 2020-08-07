@@ -1,0 +1,6 @@
+__pycache__/
+jieba/
+.ipynb_checkpoints/
+build/
+dist/
+keyword_extraction.egg-info/
